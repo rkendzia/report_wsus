@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewporst" content="width=device-width, initial-scale=1.0">
+    <title>Rapport DC </title>
+    <style>
+        h1 {
+
+           color: rgba(15, 8, 119, 0.76);
+        }
+        h2 {
+
+            color: blue;
+         }
+         h3 {
+
+            color: #1E90FF;
+         }
+         h4 {
+
+            color: #7B68EE;
+         }
+        TABLE {TABLE-LAYOUT: fixed; border:0.1 solid gray ; FONT-WEIGHT: normal; FONT-SIZE: 8pt;  FONT-FAMILY: Tahoma; ; border : 1}
+		td{ VERTICAL-ALIGN: TOP; FONT-FAMILY: Tahoma ;TEXT-ALIGN: center;border:0.1 solid gray ;padding 0px 0px}
+		th {VERTICAL-ALIGN: TOP; TEXT-ALIGN: center;BACKGROUND-COLOR: #0066FF;COLOR: white ;}
+				
+		tr{border:0.1; padding 0px 0px}
+		tr:nth-child(even) {background: #6dc2e9}
+		tr:nth-child(odd) {background: #FFF}
+          }  
+        body {DISPLAY: block; FONT-WEIGHT: normal; FONT-SIZE: 8pt; RIGHT: 10px; COLOR: Black; FONT-FAMILY: Tahoma; POSITION: absolute;}
+        p.ok {FONT-FAMILY: Tahoma; FONT-SIZE: 10pt;COLOR:green}
+        p.err {FONT-FAMILY: Tahoma; FONT-SIZE: 10pt;COLOR:red}
+        
+            
+
+
+    </style>
+</head>
+<div style="text-align:center;background-color: #0B67AB">
+ <div style="display:inline-block; text-align:left; font-size:12pt;
+             background-color:white; 
+             padding: 20px;
+             border:2px solid rgb(0,0,0);
+             width: 60%;
+             min-height: 1000px;">
+ 
+
+<body>
+    <h1>Rapport Wsus de test</h1>
+
+
+    
+    Date du rapport mercredi 5 octobre 2022 <br>
+
+
+    <H2>Informations du serveur</H2>
+    <table >
+        <tr>
+            <th>Nom du serveur</th>
+            <td>mac730</td>
+        </tr>
+        <tr>
+            <th>Port utilisé</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Version</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>URL</th>
+            <td></td>
+        </tr>
+        
+    </table>
+
+
+     
+
+    <H2>Status</H2>
+    <table >
+        <tr>
+            <th>Nombre de mise à  jour</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Mise à  jour déclinée</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Mise à  jour approuvée</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Mise à  jour non approuvée</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Nombre de mise à  jour en erreur</th>
+            <td p.err></td>
+        </tr>
+        <tr>
+            <th>Nombre de mise à  jour nécessaire</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Nombre de de clients</th>
+            <td></td>
+        </tr>
+         <tr>
+            <th>Nombre de de clients avec mise à  jour en attente</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Nombre de de clients avec des mises à  jour en erreur</th>
+            <td p.err></td>
+        </tr>
+         <tr>
+            <th>Nombre de de clients à  jour</th>
+            <td></td>
+        </tr>
+        
+    </table>
+
+
+     
+
+<H2>Vérification de l'espace dique</H2>
+ 
+           
+            <table border='1'>
+                <tr>
+                    <th>Nom du disque</th>
+                    <th>Taille</th>
+                    <th>Occupation</th>
+                    <th>libre</th>
+                </tr>
+                 <tr><td></td><td>0</td><td></td><td bgcolor='red'></td></tr> </table> 
+    
+    <H2>Classification</H2>
+    <p>Voici la liste des classifications configurées sur le serveur.
+
+    <table>
+        <tr>
+            <th>Liste</th>
+         </tr>
+      </table> 
+    
+    <H2>Catégories</H2>
+
+    <table>
+        <tr>
+            <th>Liste</th>
+         </tr>
+      </table> 
+    
+    <H2>Groupes</H2>
+
+    <table>
+         <tr>
+            <th>Liste</th>
+            <th>groupe parent</th>
+            <th><Nombre de poste</th>
+         </tr>
+      </table> <H2>Status des postes</H2> 
+
+    <H2>Mise à  jour en Erreur</H2>
+
+    <table>
+        <tr>
+            <th>Mise à  jour</th>
+            
+        </tr>
+        
+    
+ </table> 
+    
+   
+    <H3> Postes en erreur</H3>
+    <p>Il se peut que l'antivirus ne soit pas à jour et cela bloque la montée de version de l'OS.  En cas de problème, il faut se connecter sur le poste,
+    essayer manuellement de mettre à jour le poste sinon il faut regarder les logs du windows update pour comprendre la source du problème</p>
+    <table>
+         <tr>
+            <th>Nom</th>
+            <th>IP</th>
+            <th>OS</th>
+            <th>Dernier Rapport</th>
+         </tr>
+      </table> 
+    
+   
+    <H3> Postes en attente de redémarrage</H3>
+    <p> Il faut demander aux utilisateurs des postes de redémarrer leur ordinateur régulièrement pour que les mises à jour puissent s'installer</p>
+    <table>
+         <tr>
+            <th>Nom</th>
+            <th>IP</th>
+            <th>OS</th>
+            <th>Dernier Rapport</th>
+         </tr>
+      </table> 
+   
+   
+    <H3> Mise à  jour téléchargée sur les postes</H3>
+    <p> Les mises à jour ont été téléchargées sont en attente d'installation</p> 
+    <table>
+         <tr>
+            <th>Nom</th>
+            <th>IP</th>
+            <th>OS</th>
+            <th>Dernier Rapport</th>
+         </tr>
+      </table> 
+    <p> Les postes sont à jour </p>
+   
+    <H3> Postes avec les mises à  jour installé</H3>
+
+    <table>
+         <tr>
+            <th>Nom</th>
+            <th>IP</th>
+            <th>OS</th>
+            <th>Dernier Rapport</th>
+         </tr>
+      </table> 
+    
+   
+    <H3> Mises à jour non installées sur les potes</H3>
+    <p>Il se peut que le device doit redémarrer pour finaliser l'installation des mises à jour en cours avant de télécharger les nouvelles dont le device a besoin.
+    <table>
+         <tr>
+            <th>Nom</th>
+            <th>IP</th>
+            <th>OS</th>
+            <th>Dernier Rapport</th>
+         </tr>
+      </table>
+
+    
+    </body>
+        </div>
+             </div>
+</html>
+
+
+
